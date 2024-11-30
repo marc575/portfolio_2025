@@ -1,0 +1,12 @@
+html {
+  overflow-x: hidden;
+}
+::-moz-selection {
+  color: $white-color;
+  background: $primary-color;
+}
+
+::selection {
+  color: $white-color;
+  background: $primary-color;
+}

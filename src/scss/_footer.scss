@@ -1,0 +1,32 @@
+footer{
+  background-color: $primary-color;
+  color: $white-color;
+  padding-top: 2rem;
+  border-top: 1px solid $gray-color;
+
+  h5, h2 {
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+	  color: $white-color;
+  }
+
+  .social-icons {
+    display: flex;
+    a {
+      margin-right: 15px;
+	  
+      img {
+        width: 25px;
+        transition: transform ease-out .2s;
+      }
+      &:hover {
+        img {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+}

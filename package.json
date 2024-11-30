@@ -1,0 +1,35 @@
+{
+  "name": "Tatchou Marc",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass src/scss/index.scss src/index.min.css --watch --style compressed",
+    "js": "concat-cli -f 'path/to/js/**/*.js' -o bundle.js",
+    "start": "http-server src",
+    "build": "echo \"Write the script for the build\""
+  },
+  "keywords": [
+    "Digital",
+    "Site Vitrine",
+    "Site E-commerce",
+    "Shopify",
+    "WordPress",
+    "Landingpage",
+    "Application Mobile",
+    "Application Web",
+    "Python"
+  ],
+  "author": "Toncode",
+  "license": "ISC",
+  "devDependencies": {
+    "concat-cli": "^4.0.0",
+    "http-server": "^14.1.1",
+    "sass": "^1.66.1"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.3"
+  }
+}

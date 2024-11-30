@@ -1,0 +1,12 @@
+.form-group {
+    margin-bottom: 1rem;
+}
+.form-control {
+    border-radius: 0;
+    padding: 10px 15px;
+    &:focus{
+        border-color: $primary-color;
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem rgba($primary-color, 0.25);
+    }
+}

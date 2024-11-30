@@ -1,0 +1,143 @@
+.hero {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+
+    @media (max-width: 769px) {
+        flex-direction: column-reverse;
+    }
+
+    .hero-content {
+        width: 60%;
+
+        @media (max-width: 769px) {
+            width: 100%;
+        }
+
+        .hero-link {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            align-items: center;
+
+            .hero-link-social {
+                display: flex;
+
+                a {
+                    margin-right: 15px;
+        
+                    img {
+                        width: 25px;
+                        transition: transform ease-out .2s;
+                    }
+                    &:hover {
+                        img {
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .hero-img {
+        position: relative;
+        display: flex;
+        width: 300px; /* Ajustez selon votre image */
+        height: 300px; /* Ajustez selon votre image */
+        border-radius: 50%; /* Pour la bordure circulaire */
+        overflow: hidden; /* S'assure que tout débordement est masqué */
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ajuste l'image pour qu'elle remplisse le conteneur */
+            border-radius: 10%; /* Maintient une forme circulaire */
+            cursor: pointer;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 5px solid transparent; /* Début de la bordure */
+            border-radius: 50%; /* Assure que la bordure est circulaire */
+            box-sizing: border-box; /* Inclut la bordure dans les dimensions */
+            animation: rotate-border 10s linear infinite;
+        }
+
+        @keyframes rotate-border {
+            0% {
+                transform: rotate(0deg);
+                border-color: $accent-color $secondary-color $accent-color;
+            }
+            100% {
+                transform: rotate(360deg);
+                border-color: $secondary-color $accent-color $secondary-color;
+            }
+        }
+        
+    }
+}
+
+.counter-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    border-radius: 30px;
+    box-shadow: $accent-color 0px 1px 5px 0px, $secondary-color 0px 1px 3px 0px;
+    padding: 10px;
+    
+    .text-block {
+        position: relative;
+        text-align: center;
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 10px;
+        cursor: pointer;
+
+        &:nth-child(n)::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 1px;
+            height: 80%;
+            top: 10%;
+            right: 0;
+            background-color: $white-color;
+        }
+    
+        &:last-child::after {
+            display: none;
+        }
+        
+        @media (max-width: 769px) {
+            justify-content: start;
+
+            &:nth-child(n)::after {
+                display: none;
+            }
+        }
+
+        .title {
+            font-size: 0.8rem;
+        }
+        .big-text {
+            font-size: 3rem;
+            font-weight: 700;
+        }
+        @media (max-width: 769px) {
+            width: 50%;
+        }
+    }
+}
