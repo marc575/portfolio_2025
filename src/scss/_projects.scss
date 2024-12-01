@@ -11,7 +11,7 @@
         margin-top: 50px;
         position: relative;
         
-        @media (max-width: 769px) {
+        @media (max-width: 820px) {
             flex-direction: column-reverse;
         }
 
@@ -22,13 +22,32 @@
                 font-family: 'Western Cowboys';
                 margin-bottom: 0;
             }
+
             .project-description {
                 font-size: 0.8rem;
             }
+
             .project-langages {
                 font-size: 1rem;
                 font-weight: 700;
                 color: $accent-color;
+            }
+
+            hr {
+                width: 50%;
+            }
+
+            a {
+        
+                img {
+                    width: 30px;
+                    transition: transform ease-out .2s;
+                }
+                &:hover {
+                    img {
+                        transform: scale(1.2);
+                    }
+                }
             }
 
         }
@@ -40,8 +59,8 @@
             border-radius: 3px;
             cursor: pointer;
 
-            @media (max-width: 769px) {
-                width: 300px;
+            @media (max-width: 820px) {
+                width: 100%;
             }
         }
     }

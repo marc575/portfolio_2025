@@ -10,3 +10,21 @@ html {
   color: $white-color;
   background: $primary-color;
 }
+
+.text-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.text-link {
+  color: $primary-color;
+  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-thickness: 0.2rem;
+  &:hover {
+    color: $accent-color;
+    font-weight: 700;
+  }
+}

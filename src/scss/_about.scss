@@ -1,0 +1,67 @@
+.about {
+    .about-text {
+        max-width: 700px;
+        margin: 0px auto 2rem auto;
+    }
+    .about-title {
+        margin-bottom: 2rem;
+    }
+    .about-items {
+        gap: 30px;
+        display: flex;
+        flex-direction: row;
+        @media(max-width: 992px) {
+            flex-direction: column;
+        }
+
+        .about-item {
+            background-color: $white-color;
+            color: $primary-color;
+            border-radius: 30px;
+            box-shadow: $accent-color 0px 1px 5px 0px, $secondary-color 0px 1px 3px 0px;
+            padding: 30px 15px;
+
+            .about-item-link-and-image {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                img {
+                    width: 50px;
+                    transition: transform ease-out .2s;
+                }
+                &:hover {
+                    img {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+            
+            h4 {
+                margin-top: 10px;
+                font-size: 18px;
+            }
+            .badge {
+                background: darken($accent-color, 20%);;
+                text-decoration: none;
+                padding: .9rem;
+                position: relative;
+                left: -20px;
+                border-radius: 0px 20px 20px 0;
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 40px;
+                    height: 40px;
+                    position: absolute;
+                    left: 5px;
+                    top: -6px;
+                    z-index: -1;
+                    background: $accent-color;
+                    transform: rotate(-17deg);
+                }
+            }
+        }
+    }
+}
