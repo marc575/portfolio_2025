@@ -1,13 +1,13 @@
 .about {
     .about-text {
-        max-width: 700px;
+        max-width: 900px;
         margin: 0px auto 2rem auto;
     }
     .about-title {
         margin-bottom: 2rem;
     }
     .about-items {
-        gap: 30px;
+        gap: 20px;
         display: flex;
         flex-direction: row;
         @media(max-width: 992px) {
