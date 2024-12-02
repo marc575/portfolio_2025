@@ -15,10 +15,5 @@ $(function() {
           delay: 10000,
           disableOnInteraction: false
         },
-        pagination: {
-          el: ".swiper-pagination",
-          type: 'fraction',
-          clickable: true,
-        },
     });
 })

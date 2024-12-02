@@ -8,10 +8,9 @@
         flex-direction: row;
         gap: 30px;
         align-items: center;
-        margin-top: 60px;
         position: relative;
         
-        @media (max-width: 820px) {
+        @media (max-width: 759px) {
             flex-direction: column-reverse;
         }
 
@@ -62,12 +61,12 @@
 
         img {
             display: block;
-            width: 400px;
+            width: 50%;
             object-fit: cover;
             border-radius: 3px;
             cursor: pointer;
 
-            @media (max-width: 820px) {
+            @media (max-width: 759px) {
                 width: 100%;
             }
         }
@@ -76,16 +75,20 @@
 
     .autoplay-progress {
         position: absolute;
-        left: 5px;
-        top: 5px;
-        z-index: 10;
-        width: 48px;
-        height: 48px;
+        left: 8%;
+        top: 5%;
+        z-index: 2;
+        width: 40px;
+        height: 40px;
         display: flex;
         align-items: center;
         justify-content: center;
         font-weight: bold;
         color: $accent-color;
+        @media (max-width: 759px) {
+            top: 46%;
+            left: 18%;
+        }
 
         svg {
             --progress: 0;
