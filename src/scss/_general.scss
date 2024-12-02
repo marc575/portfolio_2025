@@ -36,16 +36,29 @@ html {
   .cta-link {
     
     position: fixed;
-    bottom: 5%;
+    bottom: 4%;
     right: 5%;
 
     img {
       width: 40px;
       transition: transform ease-out .2s;
+      animation: moveButton 2s infinite;
     }
     &:hover {
       img {
           transform: scale(1.2);
+      }
+    }
+
+    @keyframes moveButton {
+      0% {
+          transform: translateY(-10px);
+      }
+      50% {
+          transform: translateY(10px);
+      }
+      100% {
+          transform: translateY(-10px);
       }
     }
   } 
