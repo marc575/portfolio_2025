@@ -9,6 +9,11 @@ $(function() {
         delay: 10000,
         disableOnInteraction: false
       },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        type: 'fraction',
+      },
       on: {
         autoplayTimeLeft(s, time, progress) {
           progressCircle.style.setProperty("--progress", 1 - progress);

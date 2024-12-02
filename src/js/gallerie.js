@@ -17,6 +17,8 @@ $(function() {
         },
         pagination: {
           el: ".swiper-pagination",
+          type: 'fraction',
+          clickable: true,
         },
     });
 })
