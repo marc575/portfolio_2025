@@ -1,13 +1,13 @@
-.about {
-    .about-text {
+.service {
+    .service-text {
         max-width: 900px;
         margin: 0px auto 2rem auto;
     }
-    .about-title {
+    .service-title {
         margin-bottom: 2rem;
     }
-    .about-items {
-        gap: 30px;
+    .service-items {
+        gap: 20px;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         @media(max-width: 992px) {
@@ -17,7 +17,7 @@
             grid-template-columns: repeat(1, 1fr);
         }
 
-        .about-item {
+        .service-item {
             display: flex;
             flex-direction: column;
             gap: 10px;
