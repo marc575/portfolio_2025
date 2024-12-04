@@ -1,6 +1,6 @@
 $(function() {
   var swiper = new Swiper(".logos", {
-    spaceBetween: 20,
+    spaceBetween: 10,
     centeredSlides: true,
     loop: true,
     autoplay: {
