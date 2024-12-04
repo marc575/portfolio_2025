@@ -5,6 +5,7 @@ $(function() {
       spaceBetween: 30,
       centeredSlides: true,
       mousewheel: true,
+      loop: true,
       autoplay: {
         delay: 10000,
         disableOnInteraction: false
