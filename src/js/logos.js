@@ -1,8 +1,7 @@
 $(function() {
   var swiper = new Swiper(".logos", {
-    spaceBetween: 10,
+    spaceBetween: 20,
     centeredSlides: true,
-    slidesPerView: 5,
     loop: true,
     autoplay: {
       delay: 500,
@@ -10,9 +9,9 @@ $(function() {
     },
     breakpoints: {
       "@0.00": {
-        slidesPerView: 5,
+        slidesPerView: 4,
       },
-      "@0.50": {
+      "@0.75": {
         slidesPerView: 7,
       },
     },
