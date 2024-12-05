@@ -12,9 +12,11 @@
         grid-template-columns: repeat(4, 1fr);
         @media(max-width: 992px) {
             grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
         }
         @media(max-width: 540px) {
             grid-template-columns: repeat(1, 1fr);
+            gap: 40px;
         }
 
         .service-item {
