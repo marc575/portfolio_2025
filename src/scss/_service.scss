@@ -22,7 +22,9 @@
         .service-item {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 20px;
+            text-decoration: none;
+            color: $white-color;
 
             .service-img {
                 border-radius: 5px 5px 0 0;
