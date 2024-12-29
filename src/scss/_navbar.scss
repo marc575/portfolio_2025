@@ -5,7 +5,6 @@
     top: 0;
     width: 100%;
     z-index: 2;
-    border-bottom: 1px solid $gray-color;
     @media(max-width: 820px) {
         opacity: 0.9;
     }
@@ -104,6 +103,7 @@
     
                 .nav-link {
                     font-weight: 600;
+                    color: $white-color;
                     
                     &:focus, &:hover, &:active {
                         color: $accent-color;

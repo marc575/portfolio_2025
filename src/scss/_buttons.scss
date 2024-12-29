@@ -29,7 +29,7 @@
 }
 
 .btn-accent {
-  background-color: darken($accent-color, 20%);
+  background-color: $accent-color;
   border-color: $accent-color;
   color: $white-color;
   &:hover {
@@ -40,7 +40,7 @@
 .btn-outline-accent {
   background-color: transparent;
   border-color: darken($accent-color, 10%);
-  color: $accent-color;
+  color: $white-color;
     &:hover {
         background-color: darken($accent-color, 20%);
         border-color: $accent-color;

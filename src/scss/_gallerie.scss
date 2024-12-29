@@ -8,8 +8,8 @@
     .swiper-slide {
         background-position: center;
         background-size: cover;
-        width: 500px;
-        max-height: 500px;
+        width: 600px;
+        max-height: 400px;
         position: relative;
         overflow-y: scroll;
 
@@ -20,7 +20,6 @@
         img {
             display: block;
             width: 100%;
-            border-radius: 5px 5px 0 0;
         }
     }
 }
