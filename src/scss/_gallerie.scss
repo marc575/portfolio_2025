@@ -1,15 +1,14 @@
 .gallerie {
     
     width: 100%;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 50px 0;
     position: relative;
 
     .swiper-slide {
         background-position: center;
         background-size: cover;
-        width: 600px;
-        max-height: 400px;
+        width: 500px;
+        max-height: 300px;
         position: relative;
         overflow-y: scroll;
 
