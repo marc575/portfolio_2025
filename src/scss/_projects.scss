@@ -25,6 +25,10 @@
         .content {
             width: 50%;
 
+            @media (max-width: 759px) {
+                width: 100%;
+            }
+
             .project-number {
                 font-size: 3rem;
                 font-weight: 700;
@@ -93,6 +97,10 @@
             display: block;
             cursor: pointer;
             width: 50%;
+            
+            @media (max-width: 759px) {
+                width: 100%;
+            }
         }
 
         .img {
