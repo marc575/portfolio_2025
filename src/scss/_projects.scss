@@ -47,7 +47,7 @@
                     color: $white-color;
 
                     h2 {
-                        font-size: 2rem;
+                        font-size: 1.8rem;
                         font-weight: 700;
                     }
                 }
@@ -104,17 +104,17 @@
         }
 
         .img {
-            border-radius: 20px 20px 0 0;
+            border-radius: 10px 10px 0 0;
             width: 100%;
-            max-height: 400px;
+            height: auto;
             object-fit: cover;
             object-position: center top;
         }
 
         .img-large {
-            border-radius: 20px 20px 0 0;
+            border-radius: 10px 10px 0 0;
             width: 100%;
-            max-height: 400px;
+            height: auto;
             object-fit: contain;
             object-position: center top;
         }

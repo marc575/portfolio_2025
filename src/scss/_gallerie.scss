@@ -7,14 +7,9 @@
     .swiper-slide {
         background-position: center;
         background-size: cover;
-        width: 500px;
-        max-height: 300px;
+        width: 80%;
+        height: auto;
         position: relative;
-        overflow-y: scroll;
-
-        @media (max-width: 769px) {
-            width: 300px;
-        }
 
         img {
             display: block;
